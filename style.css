@@ -1,0 +1,75 @@
+:root {
+  --dcyan: #AEDEE0;
+  --dsalmon: rgb(130, 33, 22);
+  --lsalmon: #EE9D71;
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+}
+
+body {
+  transition: background-color ease-out .5s;
+}
+
+
+.videodiv {
+  clip-path: circle(var(--clip) at 50% 50%);
+}
+
+*::selection {
+  background-color: var(--lsalmon);
+}
+
+body[theme="black"] {
+  background-color: var(--black);
+}
+
+body[theme="black"] .section {
+  color: var(--white) !important;
+}
+
+body[theme="cyan"] {
+  background-color: var(--dcyan);
+}
+
+body[theme="cyan"] .section {
+  color: var(--black);
+}
+
+body[theme="salmon"] {
+  background-color: var(--lsalmon);
+}
+
+body[theme="salmon"] .section {
+  color: var(--black) !important;
+}
+
+body[theme="white"] {
+  background-color: var(--white);
+}
+
+body[theme="white"] .section {
+  color: var(--black) !important;
+}
+
+.imgdiv {
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
+}
+
+.imgdiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@font-face {
+  font-family: 'Pp_Neue_Machina';
+  src: url('fonts/NeueMachina-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+.pp-neue-machina {
+  font-family: 'Pp_Neue_Machina', sans-serif;
+}

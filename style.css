@@ -1,15 +1,14 @@
 :root {
-  --dcyan: #AEDEE0;
-  --dsalmon: rgb(130, 33, 22);
-  --lsalmon: #EE9D71;
+  --dcyan: #aedee0;
+  --dsalmon: #491c00;
+  --lsalmon: #e97228;
   --black: rgb(0, 0, 0);
   --white: rgb(255, 255, 255);
 }
 
 body {
-  transition: background-color ease-out .5s;
+  transition: background-color ease-out 0.5s;
 }
-
 
 .videodiv {
   clip-path: circle(var(--clip) at 50% 50%);
@@ -40,7 +39,7 @@ body[theme="salmon"] {
 }
 
 body[theme="salmon"] .section {
-  color: var(--black) !important;
+  color: var(--dsalmon) !important;
 }
 
 body[theme="white"] {
@@ -64,12 +63,12 @@ body[theme="white"] .section {
 }
 
 @font-face {
-  font-family: 'Pp_Neue_Machina';
-  src: url('fonts/NeueMachina-Light.otf') format('opentype');
+  font-family: "Pp_Neue_Machina";
+  src: url("fonts/NeueMachina-Light.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
 }
 
 .pp-neue-machina {
-  font-family: 'Pp_Neue_Machina', sans-serif;
+  font-family: "Pp_Neue_Machina", sans-serif;
 }

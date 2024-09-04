@@ -102,7 +102,6 @@ function parah() {
       start: "top 40%",
       end: "bottom 90%",
       scrub: 0.4,
-      markers:true,
     },
     opacity: 1,
     stagger: 2,

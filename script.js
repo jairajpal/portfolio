@@ -101,11 +101,11 @@ function parah() {
       trigger: ".para",
       start: "top 40%",
       end: "bottom 90%",
-      scrub: 0.4,
+      scrub: 0.2,
     },
     opacity: 1,
     stagger: 2,
-    ease: Power4,
+    ease: Power2,
   });
 }
 function locomotive() {

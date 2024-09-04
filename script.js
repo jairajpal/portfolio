@@ -48,7 +48,6 @@ function homePageAnimation() {
       "slidesmarquee"
     );
 }
-
 function skiils() {
   gsap.to(".slide", {
     scrollTrigger: {
@@ -61,7 +60,6 @@ function skiils() {
     pase: Power1,
   });
 }
-
 function teamAnimation() {
   document.querySelectorAll(".listelem").forEach(function (elem) {
     elem.addEventListener("mousemove", function (e) {
@@ -81,7 +79,6 @@ function teamAnimation() {
     });
   });
 }
-
 function parah() {
   var clutter = "";
 
@@ -102,9 +99,10 @@ function parah() {
   gsap.to(".textparah span", {
     scrollTrigger: {
       trigger: ".para",
-      start: "top 50%",
-      end: "bottom 80%",
-      scrub: 0.2,
+      start: "top 40%",
+      end: "bottom 90%",
+      scrub: 0.4,
+      markers:true,
     },
     opacity: 1,
     stagger: 2,
@@ -128,7 +126,6 @@ function capsuleAnimation() {
     ease: Power4,
   });
 }
-
 function colorChanger(params) {
   document.querySelectorAll(".section").forEach(function (section) {
     ScrollTrigger.create({
@@ -144,6 +141,8 @@ function colorChanger(params) {
     });
   });
 }
+
+
 
 colorChanger();
 capsuleAnimation();
